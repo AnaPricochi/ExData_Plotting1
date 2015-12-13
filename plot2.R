@@ -6,6 +6,6 @@ plot2<- function(){
   plot(data$Time, data$Global_active_power, type = "l", main = NULL, xlab = '', ylab = "Global Active Power (kilowatts)")
   
   # export to csv
-  dev.copy(png, file = "plot2.png")
+  dev.copy(png, file = "plot2.png", width = 480, height = 480, units = "px")
   dev.off() 
 }

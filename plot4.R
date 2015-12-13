@@ -16,6 +16,6 @@ plot4<- function(){
   })
 
   # export to csv
-  dev.copy(png, file = "plot4.png")
+  dev.copy(png, file = "plot4.png", width = 480, height = 480, units = "px")
   dev.off() 
 }
